@@ -1,0 +1,126 @@
+.contact-section {
+  padding: 6rem 4rem;
+  min-height: 100vh;
+  background-color: var(--white);
+}
+
+.contact-header {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 4rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.icon-box {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(100, 255, 218, 0.1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--cyan);
+  flex-shrink: 0;
+}
+
+.info-item h3 {
+  font-size: 1.2rem;
+  color: var(--lightest-navy);
+  margin-bottom: 0.5rem;
+}
+
+.info-item p {
+  color: var(--slate);
+  font-size: 1rem;
+}
+
+.contact-form {
+  background-color: #f8faff;
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px -10px rgba(2, 12, 27, 0.1);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--navy);
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid var(--light-slate);
+  border-radius: 4px;
+  background-color: var(--white);
+  color: var(--navy);
+  font-family: var(--font-sans);
+  transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--cyan);
+  box-shadow: 0 0 0 2px rgba(100, 255, 218, 0.1);
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--navy);
+  color: var(--cyan);
+  font-weight: 600;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transition: var(--transition);
+}
+
+.submit-btn:hover {
+  background-color: var(--lightest-navy);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 900px) {
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 4rem 2rem;
+  }
+
+  .contact-form {
+    padding: 2rem;
+  }
+}
